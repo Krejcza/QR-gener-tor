@@ -22,3 +22,9 @@ function generateQR(){
 button.addEventListener('click', function(){
    generateQR()
 })
+
+qrText.addEventListener('keypress', function(e){
+   if(e.key === 'Enter'){
+      generateQR()
+   }
+})
